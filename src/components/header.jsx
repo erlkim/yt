@@ -88,20 +88,7 @@ export default function Header({ onApiKeyChange }) {
               </div>
 
               {/* GitHub Button */}
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                href="https://github.com/hotheadhacker/youtube-player"
-                target="_blank"
-                className="flex items-center space-x-2 px-3 sm:px-4 py-2 text-sm sm:text-base rounded-md bg-gradient-to-r from-gray-800 to-gray-900 text-white font-medium hover:from-gray-700 hover:to-gray-800 transition-all"
-              >
-                <FaGithub className="w-4 h-4 sm:w-5 sm:h-5" />
-                <span>Star on GitHub</span>
-              </motion.a>
-            </div>
-          </div>
-        </div>
-      </motion.div>
+              
 
       {/* Dialog */}
       <AnimatePresence>
