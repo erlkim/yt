@@ -73,75 +73,11 @@ export default function Footer() {
           </div>
 
           {/* GitHub Section with API Instructions */}
-          <div className="w-full flex flex-col gap-4">
-            <motion.a
-              href="https://github.com/hotheadhacker/youtube-player"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center space-x-3 px-5 py-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FaGithub className="w-5 h-5" />
-              <span>Source Code</span>
-            </motion.a>
+          
+            
 
             {/* API Key Instructions Dropdown */}
-            <div className="w-full">
-              <button
-                onClick={() => setIsInstructionsOpen(!isInstructionsOpen)}
-                className="w-full flex items-center justify-between px-5 py-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors text-left"
-              >
-                <span>How to get youtube data API key</span>
-                <FaChevronDown
-                  className={`transform transition-transform duration-200 ${
-                    isInstructionsOpen ? 'rotate-180' : ''
-                  }`}
-                />
-              </button>
-              <AnimatePresence>
-                {isInstructionsOpen && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="mt-2 bg-gray-800 rounded-lg p-4 text-sm text-gray-300"
-                  >
-                    <div className="space-y-4">
-                      <div>
-                        <h4 className="font-semibold text-white mb-2">Step 1: Create a Google Cloud Project</h4>
-                        <ul className="list-disc list-inside space-y-1 text-gray-400">
-                          <li>Go to the Google Cloud Console</li>
-                          <li>Sign in with your Google account</li>
-                          <li>Click on the Select a project dropdown (top left)</li>
-                          <li>Click New Project → Give it a name → Click Create</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-white mb-2">Step 2: Enable YouTube Data API v3</h4>
-                        <ul className="list-disc list-inside space-y-1 text-gray-400">
-                          <li>In the Google Cloud Console, go to API & Services</li>
-                          <li>Click + ENABLE APIS AND SERVICES (top)</li>
-                          <li>Search for YouTube Data API v3</li>
-                          <li>Click on it, then click Enable</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-white mb-2">Step 3: Get an API Key</h4>
-                        <ul className="list-disc list-inside space-y-1 text-gray-400">
-                          <li>Go to Credentials (left sidebar)</li>
-                          <li>Click Create Credentials → Select API Key</li>
-                          <li>Google will generate an API key. Click Copy and Save it</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          </div>
-        </div>
+            
 
         {/* Credits Bar */}
         <div className="mt-8 pt-8 border-t border-gray-800">
